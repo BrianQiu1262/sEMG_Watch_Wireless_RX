@@ -120,7 +120,7 @@ uint32_t esb_base_init(void)
 	  nrf_esb_config.payload_length           = NRF_ESB_MAX_PAYLOAD_LENGTH;//设置载荷长度
     nrf_esb_config.protocol                 = NRF_ESB_PROTOCOL_ESB_DPL;//动态数据长度
     nrf_esb_config.retransmit_delay         = 500;                     //重发延时600us
-    nrf_esb_config.bitrate                  = NRF_ESB_BITRATE_2MBPS;   //数据速率2MBPS
+    nrf_esb_config.bitrate                  = RADIO_MODE_MODE_Nrf_250Kbit;   //数据速率2MBPS
     nrf_esb_config.event_handler            = nrf_esb_event_handler;   //ESB事件处理函数
     nrf_esb_config.mode                     = NRF_ESB_MODE_PRX;        //主接收
     nrf_esb_config.selective_auto_ack       = false;                   //应答所有数据包

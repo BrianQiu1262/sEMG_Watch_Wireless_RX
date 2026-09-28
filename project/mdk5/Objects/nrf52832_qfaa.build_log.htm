@@ -1,0 +1,91 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.27.1.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 test, 1, LIC=KRMW3-AKPFF-12FLE-5GSXP-5DIAY-THKV4
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.27.1.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.27.1.0
+Dialog DLL:      DCM.DLL V1.17.2.0
+Target DLL:      Segger\JL2CM3.dll V2.99.35.0
+Dialog DLL:      TCM.DLL V1.36.1.0
+ 
+<h2>Project:</h2>
+C:\Users\Administrator\Documents\GitHub\sEMG_Watch_Wireless_RX\project\mdk5\esb_rx.uvprojx
+Project File Date:  09/28/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'IK-52832DK'
+compiling nrf_assert.c...
+compiling app_error.c...
+compiling nrf_drv_uart.c...
+compiling nrfx_prs.c...
+compiling boards.c...
+compiling nrfx_uarte.c...
+compiling main.c...
+..\..\app\main.c(82): warning:  #177-D: variable "err_code"  was declared but never referenced
+    	uint32_t err_code;
+..\..\app\main.c(123): warning:  #188-D: enumerated type mixed with another type
+      nrf_esb_config.bitrate                  = RADIO_MODE_MODE_Nrf_250Kbit;   //数据速率2MBPS
+..\..\app\main.c(25): warning:  #177-D: variable "m_tx_buf"  was declared but never referenced
+  static uint8_t   m_tx_buf[NRF_ESB_MAX_PAYLOAD_LENGTH];
+..\..\app\main.c: 3 warnings, 0 errors
+compiling nrfx_uart.c...
+compiling app_util_platform.c...
+assembling arm_startup_nrf52.s...
+compiling app_error_handler_keil.c...
+compiling nrf_strerror.c...
+compiling retarget.c...
+compiling app_fifo.c...
+compiling app_error_weak.c...
+compiling app_uart_fifo.c...
+compiling nrf_esb.c...
+compiling system_nrf52.c...
+linking...
+Program Size: Code=13180 RO-data=728 RW-data=144 ZI-data=13968  
+FromELF: creating hex file...
+".\Objects\nrf52832_qfaa.axf" - 0 Error(s), 3 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.6.0.pack
+                ARM.CMSIS.5.6.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.3.0
+
+Package Vendor: NordicSemiconductor
+                http://developer.nordicsemi.com/nRF5_SDK/pieces/nRF_DeviceFamilyPack/NordicSemiconductor.nRF_DeviceFamilyPack.8.35.0.pack
+                NordicSemiconductor.nRF_DeviceFamilyPack.8.35.0
+                Nordic Semiconductor nRF ARM devices Device Family Pack with BSD license.
+   * Component: Startup Version: 8.35.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_IK-52832DK
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include
+  C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.35.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.3.0
+
+   * Component: NordicSemiconductor::Device:Startup:8.35.0
+      Include file:  Device\Include\system_nrf52.h
+      Source file:   Device\Source\system_nrf52.c
+      Include file:  Device\Include\system_nrf.h
+      Source file:   Device\Source\arm\arm_startup_nrf52.s
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>
